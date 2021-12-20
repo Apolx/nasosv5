@@ -68,6 +68,11 @@
             "TRX/USDT",
             "RSR/USDT",
             "HIVE/USDT",
+            "FIL/USDT",
+            "LTC/USDT",
+            "EOS/USDT",
+            "LUNA/USDT",
+            "VET/USDT",
             "FTM/USDT"
         ],        
         "pair_blacklist": [
@@ -87,7 +92,7 @@
     },
     "pairlists": [
         {
-			"method": "VolumePairList",
+			"method": "StaticPairList",
 			"number_assets": 75,
 			"sort_key": "quoteVolume",
 			"refresh_period": 1800
@@ -112,7 +117,7 @@
 			"refresh_period": 43200
         },
         {
-			"method": "VolumePairList",
+			"method": "StaticPairList",
 			"number_assets": 50,
 			"sort_key": "quoteVolume"
 		},
