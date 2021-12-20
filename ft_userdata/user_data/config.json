@@ -6,14 +6,14 @@
     "fiat_display_currency": "USD",
     "timeframe": "5m",
     "dry_run": true,
-    "cancel_open_orders_on_exit": false,
+    "cancel_open_orders_on_exit": true,
     "unfilledtimeout": {
         "buy": 10,
         "unit": "minutes"
     },
     "order_types": {
-        "buy": "market",
-        "sell": "market",
+        "buy": "limit",
+        "sell": "limit",
         "stoploss": "market",
         "forcebuy": "market",
 		"forcesell": "market",
