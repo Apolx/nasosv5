@@ -1,5 +1,5 @@
 {
-    "max_open_trades": 6,
+    "max_open_trades": 5,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
@@ -93,7 +93,7 @@
     },
     "pairlists": [
         {
-			"method": "VolumePairList",
+			"method": "StaticPairList",
 			"number_assets": 75,
 			"sort_key": "quoteVolume",
 			"refresh_period": 1800
@@ -109,20 +109,8 @@
 			"lookback_days": 3,
 			"min_rate_of_change": 0.1,
 			"refresh_period": 1800
-		},
-		{
-			"method": "VolatilityFilter",
-			"lookback_days": 3,
-			"min_volatility": 0.02,
-			"max_volatility": 0.75,
-			"refresh_period": 43200
-        },
-        {
-			"method": "VolumePairList",
-			"number_assets": 50,
-			"sort_key": "quoteVolume"
-		},
-        {"method": "ShuffleFilter"}
+		}
+		
     ],
     "api_server": {
         "enabled": true,
